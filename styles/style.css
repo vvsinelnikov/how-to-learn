@@ -9,24 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.header {
-  background-color: #f2f2f2;
-}
-
-.flex {
-  display: flex;
-}
-
-.header__column {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 30px 0 30px 64px;
-  margin: 0;
-}
-
 .logo {}
 
 .logo_place_header {
@@ -34,19 +16,46 @@
   height: 32px;
 }
 
+.flex {
+  display: flex;
+}
+
+.header {
+  background-color: #f2f2f2;
+  justify-content: space-between;
+}
+
+.header__column_left {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  width: 388px;
+  /* выше не даст двоешнику заезжать под subtitle и большую чатсь заголовка */
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0 30px 64px;
+  margin: 0;
+}
+
+.header__column_right {
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0;
+}
+
 .header__title {
   width: 730px;
   font-size: 102px;
   line-height: 96px;
   margin: 0;
-  z-index: 2;
+  z-index: 3;
 }
 .header__subtitle {
   width: 388px;
   font-size: 18px;
   line-height: 25px;
   margin: 0;
-  z-index: 1;
 }
 
 .header__link {
@@ -59,20 +68,18 @@
 }
 
 .header__main-illustration {
-  position: absolute;
-  right: 0;
-  align-self: flex-end;
   width: 765px;
   height: 608px;
+  z-index: 2;
 }
 
 .header__square-pic {
   position: absolute;
   top: 64px;
-  right: 0;
   width: 568px;
   height: 568px;
   background-color: #2f80ed;
+  z-index: 1;
 }
 
 /* и элемента с модификатором вида ключ-значение */
