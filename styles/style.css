@@ -100,7 +100,7 @@
 
 .two-columns__brief {
   width: 175px;
-  font-size: 18x;
+  font-size: 18px;
   line-height: 1.2em;
   margin: 0;
   font-weight: normal;
@@ -108,7 +108,7 @@
 }
 
 .two-columns__main-text {
-  width: 80%; 
+  width: 80%;
   min-width: 784px;
 }
 
