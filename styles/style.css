@@ -9,15 +9,20 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.logo {}
+.flex {
+  display: flex;
+}
 
 .logo_place_header {
   width: 183px;
   height: 32px;
+  background-image: url("../images/logo_place_header.svg");
 }
 
-.flex {
-  display: flex;
+.logo_place_footer {
+  width: 185px;
+  height: 35px;
+  background-image: url("../images/logo_place_footer.svg");
 }
 
 .header {
@@ -269,3 +274,61 @@
   background-position: left top;
   z-index: 1;
 }
+
+/* Подвал */
+
+.footer {
+  background-color: #1f1f1f;
+  color: #f2f2f2;
+  padding: 60px 0 40px 0;
+}
+
+.footer__columns {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  min-height: 350px;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  justify-content: space-between;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+}
+
+.footer__author {
+  margin: 18px 0;
+}
+
+.footer__column-heading {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bolder;
+}
+
+.footer__column-links {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.footer__column-links_type-last {
+  margin-bottom: 16px;
+}
+
+.footer__social-icon {
+  margin-right: 10px;
+}
+
