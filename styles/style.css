@@ -82,10 +82,190 @@
   z-index: 1;
 }
 
-/* и элемента с модификатором вида ключ-значение */
+/* текстовый блок */
+
+.description {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.two-columns {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns__brief {
+  width: 175px;
+  font-size: 18x;
+  line-height: 1.2em;
+  margin: 0;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 80%; 
+  min-width: 784px;
+}
+
+.two-columns__paragraph {
+  font-size: 24px;
+  line-height: 34px;
+  margin: 0 0 30px 0;
+}
+
+#last-paragraph {
+  margin: 0;
+}
+
+.two-columns__span-accent {
+  font-weight: bolder;
+}
+
+/* цифры и факты */
+
+.digits {
+  margin: 100px 0;
+}
+
+.section-title {
+  font-size: 60px;
+  line-height: 1,15em;
+  width: 60%;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.section-subtitle {
+  font-size: 24px;
+  line-height: 34px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: normal;
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.table__cell {
+  margin-top: 60px;
+  width: 250px;
+}
+
+.table__heading {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  line-height: 1,2em;
+  font-weight: bolder;
+}
+
+.table__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1,2em;
+  font-weight: normal;
+}
+
+.margin_top_20 {
+  margin-top: 20px;
+}
+
+/* Фейнман */
+
+.feynman {
+ background-color: #f2f2f2;
+ background-image: url("../images/feynman.png");
+ background-repeat: no-repeat;
+ background-size: 786px 637px;
+ background-position: left bottom;
+ height: 790px;
+ padding: 100px 0;
+ position: relative;
+}
+
+.feynman__title {
+  font-size: 120px;
+  line-height: 1,15em;
+  width: 648px;
+  margin: 0 auto 70px auto;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.feynman__subtitle {
+  font-size: 36px;
+  line-height: 51px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: normal;
+}
+
+.feynman__link {
+  color: #2f80ed;
+  text-decoration: none;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  margin: auto;
+}
+
+.feynman__link:hover {
+  text-decoration: underline;
+}
+
+/* блок с темным фоном */
+
+.kaufman {
+  background-color: #1f1f1f;
+  overflow: hidden;
+  padding: 90px 0;
+  position: relative;
+}
+
+.section-title_theme_dark {
+  color: #f2f2f2;
+}
+
+.section-subtitle_theme_dark {
+  color: #f2f2f2;
+}
+
 .table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
   margin-top: 80px;
+  width: 200px;
+  z-index: 2;
+}
+
+.table__heading_theme_dark {
+  color: #f2f2f2;
+}
+
+.table__text_theme_dark {
+  color: #f2f2f2;
+}
+
+.kaufman__triangle {
+  position: absolute;
+  top: 0;
+  right: -210px;
+  width: 877px;
+  height: 877px;
+  background-image: url("../images/kaufman-triangle.svg");
+  background-repeat: no-repeat;
+  background-size: 877px 877px;
+  background-position: left top;
+  z-index: 1;
 }
