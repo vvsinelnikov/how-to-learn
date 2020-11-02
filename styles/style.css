@@ -11,31 +11,18 @@
 
 .header {
   background-color: #f2f2f2;
+  position: relative;
   display: flex;
-  justify-content: space-between;
-}
-
-  /* получилось уйти от абсолютного позиционирования элементов слева*/
-
-.header__column_left {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  width: 388px;
-  /* выше не даст двоешнику заезжать под subtitle и большую чатсь заголовка */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 30px 0 30px 64px;
   margin: 0;
+
 }
 
-.header__column_right {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin: 0;
+.logo {
+  position: absolute;
 }
 
 .logo_place_header {
@@ -49,13 +36,17 @@
   font-size: 102px;
   line-height: 96px;
   margin: 0;
-  z-index: 3;
+  z-index: 4;
+  align-self: center;
 }
 .header__subtitle {
+  position: absolute;
+  align-self: flex-end;
   width: 388px;
   font-size: 18px;
   line-height: 25px;
   margin: 0;
+  z-index: 3;
 }
 
 .header__link {
@@ -69,6 +60,9 @@
 }
 
 .header__main-illustration {
+  position: absolute;
+  right: 0;
+  bottom: 0;;
   width: 765px;
   height: 608px;
   z-index: 2;
@@ -77,7 +71,7 @@
 .header__square-pic {
   position: absolute;
   top: 64px;
-  /* При задании right:0 при изменении масштаба объект остается за правой границей контента*/
+  right: 0;
   width: 568px;
   height: 568px;
   background-color: #2f80ed;
@@ -101,7 +95,7 @@
 .two-columns__brief {
   width: 175px;
   font-size: 18px;
-  line-height: 1.2em;
+  line-height: 1.2;
   margin: 0;
   font-weight: normal;
   color: #2f80ed;
@@ -118,7 +112,7 @@
   margin: 0 0 30px 0;
 }
 
-.two-columns__paragraph-last {
+.two-columns__paragraph:last-of-type {
   margin: 0;
 }
 
@@ -134,7 +128,7 @@
 
 .section-title {
   font-size: 60px;
-  line-height: 1,15em;
+  line-height: 1,15;
   width: 60%;
   margin: 0 auto 20px auto;
   text-align: center;
@@ -156,6 +150,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding: 0;
   list-style: none;
 }
 
@@ -166,20 +161,20 @@
 
 .table__heading {
   margin: 0 0 20px 0;
-  font-size: 18px;
-  line-height: 1,2em;
+  font-size: 24px;
+  line-height: 1.15;
   font-weight: bolder;
 }
 
 .table__text {
-  margin: 0;
+  margin: 20px 0;
   font-size: 18px;
-  line-height: 1,2em;
+  line-height: 1,2;
   font-weight: normal;
 }
 
-.margin_top_20 {
-  margin-top: 20px;
+.table__text:last-of-type {
+  margin-bottom: 0;
 }
 
 /* Фейнман */
@@ -190,14 +185,15 @@
  background-repeat: no-repeat;
  background-size: 786px 637px;
  background-position: left bottom;
- height: 790px;
- padding: 100px 0;
+ min-height: 790px;
+/* если padding только сверху (до ревью было сверху и снизу), то top: 50% для .feynman__link выровняет ссылку не по центру блока, а со смещением вниз? */
+ padding-top: 100px;
  position: relative;
 }
 
 .feynman__title {
   font-size: 120px;
-  line-height: 1,15em;
+  line-height: 1,15;
   width: 648px;
   margin: 0 auto 70px auto;
   text-align: center;
@@ -239,10 +235,15 @@
 
 .section-title_theme_dark {
   color: #f2f2f2;
+  z-index: 2;
+  position: relative;
+
 }
 
 .section-subtitle_theme_dark {
   color: #f2f2f2;
+  z-index: 2;
+  position: relative;
 }
 
 .table__cell_theme_dark {
@@ -291,6 +292,13 @@
 .footer__column {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 
 .footer__column_content_copyright {
