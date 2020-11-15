@@ -1,0 +1,16 @@
+.footer__column-links {
+  display: block;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.footer__column-links:hover {
+  text-decoration: underline;
+}
+
+.footer__column-links_type-last {
+  margin-bottom: 16px;
+}
