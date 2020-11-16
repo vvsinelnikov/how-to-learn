@@ -5,10 +5,12 @@
   font-weight: normal;
   color: #f2f2f2;
   text-decoration: none;
+  transition: opacity .25s;
 }
 
 .footer__column-links:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  opacity: .7;
 }
 
 .footer__column-links_type-last {

@@ -5,7 +5,6 @@
     background-size: 786px 637px;
     background-position: left bottom;
     min-height: 790px;
-   /* если padding только сверху (до ревью было сверху и снизу), то top: 50% для .feynman__link выровняет ссылку не по центру блока, а со смещением вниз? */
     padding-top: 100px;
     position: relative;
    }
