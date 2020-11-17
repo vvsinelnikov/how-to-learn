@@ -7,8 +7,7 @@
   <meta name="description" content="Первый проект">
   <meta name="keywords" content="Проект">
   <meta name="author" content="Владимир Синельников">
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./pages/index.css">
   <title>Научиться учиться</title>
 </head>
 
@@ -78,15 +77,15 @@
 
       <section class="video">
         <h2 class="section-title">Видео нa TED</h2>
-        <h3 class="section-subtitle" style="position: relative;">Для тех, кто любит прокрастинировать</h3>
-        <div class="video__iframes">
-          <iframe width="515" height="316" class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-          <iframe width="515" height="316" class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
+        <h3 class="section-subtitle">Для тех, кто любит прокрастинировать</h3>
+        <ul class="video__iframes">
+          <li><iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe></li>
+          <li><iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe></li>
+        </ul>
       </section>
 
       <section class="oakley">
@@ -214,22 +213,22 @@
           </li>
         </ul>
       </section>
-    </main>
 
-    <section class="resources">
-      <h2 class="section-title">Полезные ресурсы</h2>
-      <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
-      <ul class="resources__logo-zone">
-        <li><a class="resources__link" href="https://arzamas.academy/"><img
-              src="./images/resources/resources-arzamas.svg" alt="Arzamas" class="resources__logo"></a></li>
-        <li><a class="resources__link" href="https://nplus1.ru/"><img src="./images/resources/resources-n1.svg"
-              alt="N+1" class="resources__logo"></a></li>
-        <li><a class="resources__link" href="https://strelka.com/"><img src="./images/resources/resources-strelka.svg"
-              alt="Strelka" class="resources__logo"></a></li>
-        <li><a class="resources__link" href="https://polka.academy/"><img src="./images/resources/resources-polka.svg"
-              alt="Полка" class="resources__logo"></a></li>
-      </ul>
-    </section>
+      <section class="resources">
+        <h2 class="section-title">Полезные ресурсы</h2>
+        <h3 class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</h3>
+        <ul class="resources__logo-zone">
+          <li><a class="resources__link" href="https://arzamas.academy/"><img
+                src="./images/resources/resources-arzamas.svg" alt="Arzamas" class="resources__logo"></a></li>
+          <li><a class="resources__link" href="https://nplus1.ru/"><img src="./images/resources/resources-n1.svg"
+                alt="N+1" class="resources__logo"></a></li>
+          <li><a class="resources__link" href="https://strelka.com/"><img src="./images/resources/resources-strelka.svg"
+                alt="Strelka" class="resources__logo"></a></li>
+          <li><a class="resources__link" href="https://polka.academy/"><img src="./images/resources/resources-polka.svg"
+                alt="Полка" class="resources__logo"></a></li>
+        </ul>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer__columns">
@@ -237,7 +236,7 @@
           <div class="logo logo_place_footer"></div>
           <p class="footer__author">&copy; 2020. Владимир Синельников</p>
         </div>
-        <div class="footer__column">
+        <div class="footer__column footer__column_content_info">
           <h3 class="footer__column-heading">О Практикуме</h3>
           <nav>
             <ul class="footer__column-list">
@@ -247,7 +246,7 @@
             </ul>
           </nav>
         </div>
-        <div class="footer__column">
+        <div class="footer__column footer__column_content_social">
           <h3 class="footer__column-heading">Соцсети</h3>
           <nav>
             <ul class="footer__column-list">
