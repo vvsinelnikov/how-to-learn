@@ -60,8 +60,8 @@
 @import "../blocks/resources/__link/resources__link.css";
 @import "../blocks/footer/footer.css";
 @import "../blocks/footer/__author/footer__author.css";
-@import "../blocks/footer/__column-heading/footer__colum-heading.css";
-@import "../blocks/footer/__column-links/footer__colum-links.css";
+@import "../blocks/footer/__column-heading/footer__column-heading.css";
+@import "../blocks/footer/__column-links/footer__column-links.css";
 @import "../blocks/footer/__column-list/footer__column-list.css";
 @import "../blocks/footer/__column/footer__column.css";
 @import "../blocks/footer/__column/_content/footer__column_content_copyright.css";
